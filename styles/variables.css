@@ -2,7 +2,7 @@
 :root {
   --main-font: "Inter-Variable";
   --accent-font: "Press Start 2P";
-  --font-weight-main: 410;
+  --font-weight-main: 400;
   --font-weight-heading: 785;
   --background-gradient:
     repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
