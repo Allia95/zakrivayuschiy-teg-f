@@ -1,1 +1,1 @@
-https://allia95.github.io/zakrivayuschiy-teg-f/
+https://github.com/Allia95/zakrivayuschiy-teg-f
