@@ -20,8 +20,8 @@
   font-family: var(--main-font, sans-serif);
   font-size: var(--font-size-main);
   background-image: var(--background-gradient);
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--font-weight-main);
@@ -216,10 +216,10 @@
 }
 
 .card__like-button {
-  min-width: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 130px;
 }
 
 .button__text {
