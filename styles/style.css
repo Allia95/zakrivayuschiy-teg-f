@@ -216,9 +216,6 @@
 }
 
 .card__like-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-width: 130px;
 }
 
