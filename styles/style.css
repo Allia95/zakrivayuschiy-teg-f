@@ -20,6 +20,7 @@
   font-family: var(--main-font, sans-serif);
   font-size: var(--font-size-main);
   background-image: var(--background-gradient);
+  background-attachment: fixed;
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -37,6 +38,7 @@
   padding-block: clamp(122px, 10vw, 130px);
   outline: var(--border-primary);
   font-family: var(--accent-font, Courier, monospace);
+  line-height: var(--header-text-line-height);
   background-color: var(--bg-primary);
 }
 
@@ -54,6 +56,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  line-height: var(--main-text-line-height);
 }
 
 .card {
@@ -122,8 +125,9 @@
   top: 25px;
   right: 25px;
   opacity: 50%;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, Courier, monospace);
   font-size: var(--font-size-accent);
+  line-height: var(--label-text-line-height);
   text-shadow:
     -1px 0 var(--border-text),
     0 1px var(--border-text),
@@ -173,9 +177,7 @@
   border-color: var(--color-text-primary);
 }
 
-.card__like-button,
-.memory-button,
-.dialog-button {
+.button {
   position: relative;
   border: var(--border-primary);
   overflow: hidden;
@@ -184,16 +186,12 @@
   cursor: pointer;
 }
 
-.card__like-button:focus-visible,
-.memory-button:focus-visible,
-.dialog-button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--color-text-primary);
   outline: none;
 }
 
-.card__like-button::before,
-.memory-button::before,
-.dialog-button::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -206,9 +204,7 @@
   transform: translateX(0);
 }
 
-.card__like-button:hover::before,
-.memory-button:hover::before,
-.dialog-button:hover::before {
+.button:hover::before {
   transform: translateX(100%);
 }
 
@@ -302,5 +298,9 @@ dialog::backdrop {
   .save-dialog {
     margin-inline: auto;
     max-inline-size: 100vw;
+  }
+
+  .save-dialog[open] {
+  padding: 30px 40px;
   }
 }
